@@ -1,0 +1,52 @@
+<body>
+  <div class="wrapper">
+    <div class="sidebar">
+
+      <ul>
+
+        <br>
+        <br>
+        <li>
+          <!--If the login credentials are true and after the user logged into the application,these options
+          are shown.so that we give if condition.Without logged in ,the user cannot access these services.-->
+          <a *ngIf="loginService.userLoggedIn()" routerLink="/services" class="nav-link">Services</a>
+        </li>
+        <br><br>
+        <!--The profile and contactUs form will be displayed even without logged into the application.-->
+        <li id="profile">
+          <a *ngIf="!loginService.userLoggedIn()" routerLink="/home" class="nav-link">Home</a>
+        </li><br>
+
+        <li id="profile">
+          <a *ngIf="!loginService.userLoggedIn()" routerLink="/profile-card" class="nav-link">My Profile</a>
+        </li>
+
+        <li id="contact">
+          <a *ngIf="!loginService.userLoggedIn()" routerLink="/contact-us" class="nav-link">Contact Us</a>
+        </li>
+
+        <li>
+          <a *ngIf="loginService.userLoggedIn()" routerLink="libraryRecords" class="nav-link">Book List</a>
+        </li>
+
+        <li>
+          <a *ngIf="loginService.userLoggedIn()" routerLink="create-record" class="nav-link">Add Books</a>
+        </li>
+
+        <li>
+          <a *ngIf="loginService.userLoggedIn()" routerLink="feedback" class="nav-link">Drop Ur Feedback</a>
+        </li>
+
+        <li>
+          <a *ngIf="loginService.userLoggedIn()" routerLink="logout" class="nav-link">
+            <button  class="button button1" width="20%" height="10%">Logout</button>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</body>

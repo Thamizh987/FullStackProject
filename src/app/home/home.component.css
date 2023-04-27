@@ -1,0 +1,68 @@
+.homepage {
+    width: 1000px;
+    height: 650px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: linear-gradient(rgba(65, 60, 60, 0.8),
+            rgba(141, 136, 130, 0.8), rgba(97, 94, 93, 0.6), rgba(113, 113, 112, 0.6));
+    border: 2px solid rgb(37, 35, 35);
+    border-radius: 20px 90px;
+    padding: 10px;
+    font-size: larger;
+    font-family: Lucida Calligraphy;
+
+}
+img{
+    width:30%;
+    height:30%;
+    margin-bottom: 100%;
+    margin-left: 60%;
+}
+.dropdown{
+    text-align:right;
+}
+.tech {
+    font-size: xx-large;
+
+}
+
+.btn {
+    font-size: x-large;
+    margin-right: 60%;
+    color: black;
+    border-radius: 12px;
+    border-color: black;
+}
+
+.btn1 {
+    padding: 20px;
+    font-size: x-large;
+    text-align: center;
+    margin-left: 80px;
+    color: black;
+    border-radius: 12px;
+    border-color: black;
+
+}
+
+#frontEnd {
+    border-color: black;
+    color: black;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: large;
+    background: linear-gradient(rgba(70, 105, 187, 0.8),
+            rgba(141, 136, 130, 0.8), rgba(17, 21, 26, 0.6), rgba(1, 20, 29, 0.6));
+}
+
+#frontEnd1 {
+    border-color: black;
+    color: black;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: large;
+    background: linear-gradient(rgba(228, 229, 231, 0.8),
+            rgba(141, 136, 130, 0.8), rgba(168, 201, 242, 0.6), rgba(1, 20, 29, 0.6));
+}

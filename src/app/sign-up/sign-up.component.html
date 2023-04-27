@@ -1,0 +1,33 @@
+<form class="signUp">
+    <h1>Sign-Up</h1>
+    <hr>
+    <span>Please fill in this form to create an account.</span><br><br>
+    <!--It is the form to signup into the application if the user is new to our application.
+It is given with placeholders and two way binding with tooltip-->
+    <label class="required" for="firstName">Firstname </label>
+    <input type="text" id="firstName" placeholder="Enter your First Name" name="firstName" [(ngModel)]="firstName"
+        title="This field is mandatory to fill"><br><br>
+
+    <label class="required" for="lastname">Lastname </label>
+    <input type="text" id="lastname" placeholder="Enter your Last Name" name="lastname" [(ngModel)]="lastname"
+        title="This field is mandatory to fill"><br><br>
+
+    <label class="required" for="username">Username </label>
+    <input type="text" id="username" placeholder="Enter your Username" name="username" [(ngModel)]="username"
+        title="This field is mandatory to fill"><br><br>
+
+    <label class="required" for="password">Password</label>
+    <input type="password" id="password" placeholder="Enter your Password" name="password" [(ngModel)]="password"
+        title="This field is mandatory to fill"><br><br>
+
+    <label class="required" for="paswrd">Retype your password</label>
+    <input type="password" id="paswrd" placeholder="Retype ur password" name="pwd" [(ngModel)]="pwd"
+        title="This field is mandatory to fill"><br><br>
+
+    <!--On clicking the sign-up button,event is captured as eventBinding is performed and the method
+    SignUpSuccess() is called to confirm the process-->
+    <button (click)="SignUpSuccess()" id="signUp">
+        Sign-Up
+    </button>
+
+</form>

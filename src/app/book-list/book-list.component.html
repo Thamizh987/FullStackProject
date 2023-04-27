@@ -1,0 +1,77 @@
+<h1>Book List</h1>
+
+<div class="list row">
+  <div class="col-md-8">
+    <div class="input-group mb-3">
+      <!--Search bar to find the book by its name-->
+      <input type="text" class="form-control" placeholder="Search by Subject name" [(ngModel)]="subjectName">
+      <!--On clicking the search button,event is captured as event binding is performed,the method
+searchBysubjectName() is called to search the book-->
+      <button type="button" class="searchBtn" (click)="searchBysubjectName()">Search</button>
+    </div>
+  </div>
+
+  <!--Dropdown to find the book by its department name-->
+  <div>
+    <button id="Department" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+      Department
+    </button>
+    <ul class="dropdown-menu">
+      <li><button id="Department" class="dropdown-item" (click)="ViewEEE()">EEE</button></li>
+      <li><button id="Department" class="dropdown-item" (click)="ViewECE()">ECE</button></li>
+      <li><button id="Department" class="dropdown-item" (click)="ViewIT()">IT</button></li>
+      <li><button id="Department" class="dropdown-item" (click)="ViewMech()">Mechanical</button></li>
+      <li><button id="Department" class="dropdown-item" (click)="ViewCSE()">CSE</button></li>
+    </ul>
+  </div>
+
+  <!--If the user wants to remove all the books from the list,if the books present (i.e)if the length 
+  of the record is not equal to zero,it will remove all the records present.
+If the length of the record is zero(i.e)if no books are present in the list,the user cannot be able
+to remove the records.-->
+  <div *ngIf="libraryRecords.length !== 0">
+    <button id="removeAllBtn" (click)="removeAllRecords()">Remove All</button>
+  </div>
+
+  <!--The table format with the headings(th) and the data(td) in the row(tr)-->
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th> Department Name </th>
+        <th> Subject Code </th>
+        <th> Subject Name </th>
+        <th> Author Name</th>
+        <th> Edition</th>
+        <th> Number Of Copies</th>
+        <th> Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let library of libraryRecords">
+        <td> {{ library.deptName }} </td>
+        <td> {{ library.subjectCode }} </td>
+        <td> {{ library.subjectName }} </td>
+        <td> {{ library.authorName }} </td>
+        <td> {{ library.edition }} </td>
+        <td> {{ library.noOfCopies }} </td>
+        <td>
+          <!--Button to update the book details-->
+          <div class="animatedButton">
+            <button (click)="updateBookDetails(library.bookId)" class="fa fa-refresh" aria-hidden="true"
+              title="Update Book details">
+            </button>
+            <!--Button to delete the book records-->
+            <span class="deleteAnim"> <button (click)="confirmation(library)" class="fa fa-trash"
+                style="margin-left: 10px" title="Delete Record"></button></span>
+            <!--Button to view the book details-->
+            <button (click)="searchById(library.bookId)" class="fa fa-eye" aria-hidden="true" style="margin-left: 10px"
+              title="View Books"></button>
+          </div>
+        </td>
+      </tr>
+      <!--If the user deleted all the books present,then it shows "No Books Found"(If the length of the record is zero)-->
+      <tr scope="row" *ngIf="libraryRecords.length === 0">
+        <td colspan="7" class="text-center">No Books Found</td>
+      </tr>
+    </tbody>
+  </table>

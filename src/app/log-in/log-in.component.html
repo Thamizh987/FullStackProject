@@ -1,0 +1,27 @@
+<div class="loginPage">
+
+    <h2> Login Page </h2>
+    <div class="image">
+        <img src="..\assets\LoginImage.png" height="300" width="300">
+    </div>
+    <div>
+        <!--Login form with some credentials and it is two way binded.It is given with 
+        placeholders and tooltip-->
+        <form>
+            <label class="required" for="username">Username</label><br>
+            <input type="text" id="username" name="username" [(ngModel)]="username" required
+                placeholder="Enter your username" title="This field is mandatory to fill"><br><br>
+            <label class="required" for="password">Password</label><br>
+            <input type="password" id="password" name="password" [(ngModel)]="password" required
+                placeholder="Enter your password" title="This field is mandatory to fill"><br>
+            <!--If the user entered wrong credentials..it will show the message that the credentials are wrong-->
+            <p id="messageForWrongCredentials">{{messageForWrongCredentials}}</p>
+            <!--On clicling the submit button,event is captured as event binding is performed and the method
+            checkLogin() is called to check the credentials-->
+            <button (click)="checkLogin()" class="btn btn-success">
+                Submit
+            </button>
+        </form>
+    </div>
+
+</div>

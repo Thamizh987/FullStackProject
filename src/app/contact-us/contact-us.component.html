@@ -1,0 +1,29 @@
+<div class="shade">
+    <div class="blackboard">
+        <div class="form">
+            <p>
+                <label>Name: </label>
+                <input type="text" name="Name" [(ngModel)]="Name" title="This field is mandatory to contact us"/>
+            </p>
+            <p>
+                <label>Email: </label>
+                <input type="text" name="Email"  [(ngModel)]="Email"  title="This field is mandatory to contact us" />
+            </p>
+            <p>
+                <label>Phone: </label>
+                <input type="number" name="phoneNum"  [(ngModel)]="phoneNum"  title="This field is mandatory to contact us" />
+            </p>
+            <p>
+                <label>Subject: </label>
+                <input type="text" name="Subject"  [(ngModel)]="Subject"  title="This field is mandatory to contact us"/>
+            </p>
+            <p>
+                <label>Message: </label>
+                <textarea name="Message"  [(ngModel)]="Message"  title="This field is mandatory to contact us" ></textarea>
+            </p>
+            <p class="wipeout">
+                <button (click)="contactUs()"> send</button>
+            </p>
+        </div>
+    </div>
+</div>

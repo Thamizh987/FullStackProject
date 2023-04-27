@@ -1,0 +1,56 @@
+<body>
+    <h1>Add Books</h1>
+    <div class="col-md-6 offset-md-3">
+
+        <form (ngSubmit)="onSubmit()" class="center">
+            <!--It is the form to add the book records-->
+            <div class="form-group">
+                <label> Department ID </label><br>
+                <input type="text" class="form-control" id="departmentID" minlength="1" maxlength="20"
+                    placeholder="Enter department ID" [(ngModel)]="library.deptId" name="departmentID" nullify="false" required>
+            </div>
+
+            <div class="form-group">
+                <label> Department Name </label><br>
+                <input type="text" class="form-control" id="departmentName" minlength="3" maxlength="20"
+                    placeholder="Enter department Name" [(ngModel)]="library.deptName" name="departmentName"
+                    nullify="false" required>
+            </div>
+
+            <div class="form-group">
+                <label> Subject Code </label><br>
+                <input type="text" class="form-control" id="subjectCode" minlength="5" maxlength="10"
+                    placeholder="Enter Subject Code" [(ngModel)]="library.subjectCode" name="subjectCode" required>
+            </div>
+
+            <div class="form-group">
+                <label> Subject Name </label><br>
+                <input type="text" class="form-control" id="subjectName" placeholder="Enter Subject Name"
+                    [(ngModel)]="library.subjectName" name="subjectName" required>
+            </div>
+
+            <div class="form-group">
+                <label> Author Name</label><br>
+                <input type="text" class="form-control" id="authorName" minlength="5" maxlength="50"
+                    placeholder="Enter Author Name" [(ngModel)]="library.authorName" name="authorName" required>
+            </div>
+
+            <div class="form-group">
+                <label> Edition </label><br>
+                <input type="text" class="form-control" id="edition" minlength="4" maxlength="10"
+                    placeholder="Enter Edition" [(ngModel)]="library.edition" name="edition" required>
+            </div>
+
+            <div class="form-group">
+                <label> Number Of Copies </label><br>
+                <input type="text" class="form-control" id="noOfCopies" minlength="1" maxlength="10"
+                    placeholder="Enter number of copies" [(ngModel)]="library.noOfCopies" name="noOfCopies" required>
+            </div>
+            <!--On clicking this button,event is captured as the event binding is performed and the method
+confirmInserted() is called to confirm the record insertion.-->
+            <button  class="btn btn-success" 
+                title="On clicking this button,a book record get inserted" type="submit">Submit</button>
+
+        </form>
+    </div>
+</body>

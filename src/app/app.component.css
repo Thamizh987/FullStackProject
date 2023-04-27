@@ -1,0 +1,103 @@
+* {
+    margin: 30;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: large;
+    border-radius: 40px;
+
+}
+
+#backIcon :hover {
+    color: #075fad;
+    box-shadow: 0 0 5px #7eb3d5;
+    text-shadow: 0 0 5px #7bb7dd;
+}
+
+.button1 {
+    border-radius: 50%;
+}
+
+body {
+    background-color: #f3f5f9;
+}
+
+#services {
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 20px;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+}
+
+.button {
+    background-color: #507fb8;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 12px 45px;
+    background-color: #507fb8;
+    padding: 12px;
+}
+#profile,#contact{
+    font-size: 25px;
+}
+
+.wrapper .sidebar {
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(rgba(74, 80, 79, 0.6),
+            rgba(172, 169, 165, 0.8), rgba(72, 76, 75, 0.6), rgba(194, 194, 185, 0.6));
+    border: 2px solid rgb(37, 35, 35);
+    position: fixed;
+    border-radius: 25px 100px;
+
+}
+
+.wrapper .sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid rgba(207, 19, 176, 0.05);
+    border-top: 1px solid rgba(235, 99, 8, 0.05);
+}
+
+.wrapper .sidebar ul li:hover {
+    background: linear-gradient(rgba(74, 80, 79, 0.6),
+    rgba(172, 169, 165, 0.8), rgba(72, 76, 75, 0.6), rgba(194, 194, 185, 0.6));
+    border-radius: 40px 80px;
+    border-color: black;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+h2 {
+    font-family: 'Copperplate Gothic', cursive;
+    font-size: xx-large;
+}
+
+a {
+    color: rgb(23, 21, 21);
+    font-family: 'Comic sans MS', cursive;
+    font-weight: 300;
+    opacity: 3;
+    font-size: larger;
+}
+
+
+.wrapper .sidebar .social_media {
+    position: absolute;
+    bottom: 0;
+}

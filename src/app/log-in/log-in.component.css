@@ -1,0 +1,83 @@
+input[type=text],
+input[type=password] {
+    width: 60%;
+    padding: 8px 8px;
+    margin: 3px;
+    border-radius: 12px;
+    font-family: Lucida Calligraphy;
+}
+
+form {
+    padding: 2px;
+}
+
+h2 {
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 60px;
+
+}
+
+label {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+button {
+    font-size: 25px;
+    font-weight: 800;
+    padding: 8px;
+    width: 20%;
+    border-radius: 12px 45px;
+    font-family: Papyrus;
+    background-color: #394550;
+    color: rgb(9, 9, 9);
+    font-family: Papyrus;
+}
+button :hover{
+    background: linear-gradient(rgba(166, 198, 112, 0.8),
+    rgba(22, 165, 9, 0.8), rgba(108, 226, 93, 0.6), rgba(11, 162, 56, 0.6)); 
+}
+.image {
+    text-align: center;
+    margin: 20px 0 12px 0;
+}
+
+.loginPage {
+    background-color: rgba(138, 135, 135, 0.8);
+    width: 60%;
+    height: 50%;
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgba(138, 135, 135, 0.8);
+    border: 2px solid rgb(37, 35, 35);
+    border-radius: 12px;
+    border-radius: 20px 90px;
+}
+
+.required::after {
+    content: '*';
+    color: red;
+}
+
+#messageForWrongCredentials {
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 20px;
+    color: black;
+    animation: blink 1s linear infinite 8s;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

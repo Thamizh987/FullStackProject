@@ -1,0 +1,47 @@
+.logout {
+    width: 80%;
+    height: 70%;
+    background-size: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgba(138, 135, 135, 0.8);
+    border: 2px solid rgb(37, 35, 35);
+    border-radius: 40px;
+    padding: 5px;
+    border-color: black;
+}
+
+button {
+    border-radius: 12px;
+    opacity: 0.6;
+    font-size: x-large;
+    background-color: #070f56;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: normal;
+}
+
+h2 {
+    text-align: center;
+    font-size: 55x;
+    font-stretch: extra-expanded;
+    color: rgba(49, 40, 40, 0.8);
+    font-family: cursive;
+    text-shadow: 1px 2px;
+}
+
+input[type=button] {
+    border-style: inset;
+    border-color: rgb(218, 112, 214);
+    font-size: 25px;
+    display: inline-block;
+    background-color: rgb(216, 191, 216);
+    height: 10%;
+    border-width: thin;
+}

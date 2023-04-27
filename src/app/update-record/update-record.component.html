@@ -1,0 +1,49 @@
+<div class="updateRecords">
+    <h1> Update Book Details</h1>
+
+    <form  (ngSubmit)="onSubmit()">
+<!--It is the form to update the book details..which is given with min length and maxlength.
+ngModel is twoWay binded because if the values are changed in the frontend,it is captured and then 
+it is passed to the backend to update the records.-->
+        <div class="form-group">
+            <label for="departmentID"> Department ID </label>
+            <input type="text" class="form-control" id="departmentID" minlength="5" maxlength="20" [(ngModel)]="library.deptId" placeholder="Enter department ID" name="departmentID">
+        </div>
+
+        <div class="form-group">
+            <label for="department"> Department Name </label>
+            <input type="text" class="form-control" id="department" minlength="5" maxlength="20" [(ngModel)]="library.deptName"  placeholder="Enter department Name" name="departmentName">
+        </div>
+
+        <div class="form-group">
+            <label for="subjCode"> Subject Code </label>
+            <input type="text" class="form-control" id="subjCode"  minlength="5" maxlength="10" [(ngModel)]="library.subjectCode" placeholder="Enter Subject Code" name="subjCode">
+        </div>
+
+        <div class="form-group">
+            <label for="subjectName"> Subject Name </label>
+            <input type="text" class="form-control" id="subjectName"  minlength="5" maxlength="50" [(ngModel)]="library.subjectName" placeholder="Enter Subject Name" name="subjectName">
+        </div>
+
+        <div class="form-group">
+            <label for="authorName"> Author Name</label>
+            <input type="text" class="form-control" id="authorName"  minlength="5" maxlength="50"  [(ngModel)]="library.authorName" placeholder="Enter Author Name"  name="authorName">
+        </div>
+
+        <div class="form-group">
+            <label for="edition"> Edition </label>
+            <input type="text" class="form-control" id="edition"  minlength="5" maxlength="10" [(ngModel)]="library.edition" placeholder="Enter Edition" name="edition">
+        </div>
+
+        <div class="form-group">
+            <label for="noOfCopies"> Number Of Copies </label>
+            <input type="text" class="form-control" id="noOfCopies" minlength="5" maxlength="10" [(ngModel)]="library.noOfCopies"  placeholder="Enter number of copies" name="noOfCopies">
+        </div>
+
+<!--On clicking the submit button,event is captured because event binding is performed
+and the method updatedSuccess() is called to confirm the updation.-->
+        <button class="btn btn-success" type="submit">Submit</button>
+
+    </form>
+
+</div>

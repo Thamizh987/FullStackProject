@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url("C:\Users\Gigabyte\LibraryManagement\src\assets\bgimage.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+h1{
+    font-family: Copperplate, Papyrus, fantasy;
+    font-stretch: expanded;
+    text-align: center;
+    text-shadow: 3px 2px #0a0b0b;
+    animation: blink 1s linear infinite;
+    font-size: 70px;
+}
+
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

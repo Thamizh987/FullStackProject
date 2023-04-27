@@ -1,0 +1,75 @@
+
+body {
+    font-family: Copperplate, Papyrus, fantasy;
+	margin: 0;
+	padding: 1rem;
+	font-size:xx-large;
+	font-weight: 800;
+	font-variant: inherit;
+	
+}
+
+.wrapper {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+ol {
+	list-style: none;
+	padding: 0;
+}
+
+li + li {
+	margin-top: 1rem;
+}
+
+li {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+    font-family: Copperplate, Papyrus, fantasy;
+font-size: xx-large;
+    background: linear-gradient(to top,
+    hsla(40, 2%, 34%, 0.8) 20%,
+    hsla(47, 46%, 82%, 0.8) 20%,
+    hsla(44, 5%, 47%, 0.8) 50%,
+    hsla(44, 5%, 100%, 0.8)100%);
+    padding: 1.5rem;
+	border-radius: 20px 90px;
+	width: calc(100% - 2rem);
+    box-shadow: 0 5px 18px rgba(246, 123, 7, 0.6);
+	border-color: black;
+}
+
+#alternate{
+   
+    background: linear-gradient(to bottom,
+    hsla(200, 1%, 46%, 0.8) 20%,
+    hsla(166, 8%, 67%, 0.8) 20%,
+    hsla(202, 5%, 46%, 0.8) 50%,
+    hsla(167, 18%, 100%, 0.8)100%);
+}
+li::before {
+	counter-increment: list-item;
+	content: counter(list-item);
+	font-size: 3rem;
+	font-weight: 700;
+	width: 1.5em;
+	height: 1.5em;
+	background: rgb(17, 17, 17);
+	flex: 0 0 auto;
+	border-radius: 50%;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    font-family: Copperplate, Papyrus, fantasy;
+
+}
+
+li:nth-child(even) {
+	flex-direction: row-reverse;
+	background: lavender;
+	margin-right: -2rem;
+	margin-left: 2rem;
+}

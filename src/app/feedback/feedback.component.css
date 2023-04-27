@@ -1,0 +1,39 @@
+.card {
+    width: 600px;
+    height: 600px;
+    color: #171617;
+    font-family: Copperplate, Papyrus,Comic sans;
+    background: linear-gradient(rgba(239, 180, 168, 0.6),
+            rgba(161, 153, 152, 0.6), rgba(232, 170, 126, 0.6), rgba(55, 52, 50, 0.6));
+    border-radius: 30px 50px;
+    text-align: center;
+    border-radius: 20px 90px;
+}
+
+.heading {
+    margin-top: 60px;
+}
+
+.card h3 {
+    font-weight: 300 !important;
+    font-size: 50px;
+}
+
+.card p {
+    font-weight: 100 !important;
+    font-size: 30px;
+    color: rgb(68, 16, 29);
+    font-family: Georgia;
+    font-stretch: expanded;
+}
+
+.ratings img {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.ratings img:hover {
+
+    transform: scale(2);
+
+}

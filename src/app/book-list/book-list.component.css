@@ -1,0 +1,78 @@
+
+table {
+    height: 800px;
+    width: 100%;
+    background-position: center;
+    text-align: center;
+    background-color: rgba(138, 135, 135, 0.8);
+    border: 2px solid rgb(37, 35, 35);
+    border-radius: 30px 50px;
+    padding: 3px;
+}
+.searchBtn{
+    margin-left: 5%;
+}
+
+h1{
+   color: rgba(35, 117, 217, 0.6);
+}
+
+tr:hover {
+    background-color: #b7b7bc;
+}
+
+th {
+    font-size: 20px;
+}
+
+td {
+    font-size: 20px;
+}
+
+input[type="text"] {
+    font-family: Lucida Calligraphy;
+    font-size: 22px;
+    font-stretch: expanded;
+    color: black;
+    box-shadow: inset;
+    border-radius: 20px 90px;
+    border-color: black;
+
+}
+button{
+    background: linear-gradient(rgba(54, 45, 45, 0.8),
+    rgba(228, 223, 223, 0.8), rgba(242, 240, 240, 0.6), rgba(75, 74, 74, 0.6)); 
+    border-radius: 20px 40px;
+    padding:7px;
+}
+
+.animatedButton :hover {
+    background-color:  #1fd80e;
+}
+
+.deleteAnim :hover {
+   background-color:  #f01111;
+    box-shadow: 0 0 5px #77afd2;
+    text-shadow: 0 0 5px #6ba7cc;
+}
+
+#removeAllBtn {
+    border-color: black;
+    background: linear-gradient(rgba(230, 15, 15, 0.8),
+    rgba(172, 8, 8, 0.8), rgba(211, 10, 10, 0.6), rgba(228, 71, 14, 0.6));     
+    border-radius: 12px;
+    padding: 10px;
+    font-size: large;
+    margin-left:120px;
+}
+
+#Department,.searchBtn{
+    border-color: black;
+    color: black;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: large;
+    background: linear-gradient(rgba(146, 215, 233, 0.8),
+    rgba(141, 136, 130, 0.8), rgba(35, 117, 217, 0.6), rgba(113, 113, 112, 0.6)); 
+}
+

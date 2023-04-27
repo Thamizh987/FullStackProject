@@ -1,0 +1,50 @@
+h2 {
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 100px;
+    font-weight: 200;
+}
+
+#welcomePage {
+    width: 800px;
+    height: 600px;
+    background-position: center;
+    background-size: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgba(138, 135, 135, 0.8);
+    border: 2px solid rgb(37, 35, 35);
+    border-radius: 40px;
+    padding: 20px;
+    font-size: larger;
+}
+
+input[type="button"] {
+    border-radius: 12px 45px;
+    background-color: #507fb8;
+    padding: 12px;
+}
+
+#btn :hover {
+
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+label {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: larger;
+}

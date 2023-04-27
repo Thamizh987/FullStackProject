@@ -1,0 +1,40 @@
+body{
+    width: 850px;
+    height: 1000px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(rgba(65, 60, 60, 0.8),
+    rgba(141, 136, 130, 0.8), rgba(97, 94, 93, 0.6), rgba(113, 113, 112, 0.6));    border: 2px solid rgb(37, 35, 35);
+    border-radius: 15px 90px;
+    font-size: larger;
+}
+.center{
+padding-right: 100px;
+}
+label {
+    font-family: Copperplate, Papyrus, Comic sans;
+    font-size: xx-large;
+    color: black;
+}
+
+button{
+    border-radius: 10px;
+    padding:10px 200px;
+    background: linear-gradient(rgba(75, 139, 146, 0.6),
+    rgba(76, 75, 50, 0.6), rgba(70, 75, 76, 0.6), rgba(14, 50, 50, 0.6));
+   font-family: 'Comic sans MS',cursive ;
+   font-size: x-large;
+   border-color: black;
+}
+input[type=text] {
+    width:500px;
+    padding: 20px 10px;
+    font-family: Lucida Calligraphy;
+    font-size: 22px;
+    font-stretch: expanded;
+    color: black;
+    border-radius: 20px 90px;
+    border-color: black;
+    text-align: center;
+}
